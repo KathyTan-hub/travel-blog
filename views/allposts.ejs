@@ -1,0 +1,33 @@
+<%- include('layouts/head'); -%>
+<body>
+    <%- include('layouts/header'); -%>
+    <%- include('layouts/nav'); -%>
+    <main>
+        <div class="admin_button">
+            <button onclick="location.href='/new'">Add a Post</button>
+            <button onclick="location.href='/logout'">Logout</button>
+        </div>
+        <section class="formData">
+            <table>
+                <thead>
+                    <th>Blog Title</th>
+                    <th>Delete</th>
+                    <th>Edit</th>
+                </thead>
+                <tbody>
+                    <%
+                    for(var blog of blogs){
+                        %>
+                        <tr>
+                            <td><%= blog.blogTitle %></td>
+                            <td><a href="/delete/<%= blog._id %>">Delete</a></td>
+                            <td><a href="/edit/<%= blog._id %>">Edit</a></td>
+                        </tr>    
+                        <%
+                    }
+                %>
+                </tbody>
+            </table>
+        </section>
+     </main>
+    <%- include('layouts/footer'); -%>

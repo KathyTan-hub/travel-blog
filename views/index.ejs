@@ -1,0 +1,16 @@
+<%- include('layouts/head'); -%>
+<body>
+    <%- include('layouts/header'); -%>
+    <%- include('layouts/nav'); -%>
+    <main>
+    <div class="hero">
+        <h1><%= blog.blogTitle %></h1>&nbsp;
+        <p>
+        <img src="/images/<%= blog.image %>">
+        </p>
+        <div class="herotext">
+            <p><%= blog.description %></p>
+        </div>
+    </div>  
+    </main>
+<%- include('layouts/footer'); -%>

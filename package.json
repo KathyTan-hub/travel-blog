@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "ejs": "*",
+    "express": "^4.17.1",
+    "express-validator": "*",
+    "body-parser": "*",
+    "mongoose": "*",
+    "express-session": "*"
+  },
+  "name": "travelblog",
+  "version": "1.0.0",
+  "description": "Create a blog using Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "blog"
+  ],
+  "author": "Suju Tan",
+  "license": "ISC"
+}

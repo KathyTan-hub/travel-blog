@@ -1,0 +1,22 @@
+<%- include('layouts/head'); -%>
+<body>
+    <%- include('layouts/header'); -%>
+    <%- include('layouts/nav'); -%>
+    <main>
+        <div class="hero">
+            <%
+            if(typeof(blogTitle) != 'undefined')
+            {
+            %>
+                <p id="formResult"><%= message%></p>
+                <h1><%= blogTitle %></h1>
+                <img src="/images/<%= image %>" >
+                <div class="herotext">
+                    <p><%= description %></p>
+                </div>
+            <%  
+            }
+            %>
+        </div>
+    </main>
+<%- include('layouts/footer'); -%>

@@ -1,0 +1,166 @@
+body {
+  width: 1120px; /* increase the width of the body to make space for the sidebar on the right */
+  border: 2px solid black; /* add a 2px border in black around the content */
+  margin: 20px auto; /* 20px margin from top and bottom of the browser body and auto makes the content sit equidistant from the left and right of the browser body */
+  padding: 20px; /* make the content inside the body sit at a 20px gap from all the 4 sides */
+  border-radius: 10px; /* round the edges of the border */
+  font-family: sans-serif; /* change the default font to sans serif */
+}
+
+header {
+  text-align: center; /* Center the text in the header*/
+}
+
+#container {
+  white-space: nowrap;
+}
+
+#icon img {
+  float: left;
+  display: inline;
+  width: 200px;
+  margin: 0px 30px;
+}
+
+#title {
+  display: inline;
+  white-space: nowrap;
+  font-family: "Kalam", cursive;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #4374ae;
+  margin: 20px;
+  padding: 20px;
+  height: 200px;
+  line-height: 200px;
+}
+
+nav {
+  background-color: #4374ae;
+  padding: 10px;
+}
+
+nav a {
+  font-size: 25px;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0 10px;
+}
+
+nav ul {
+  /* applies these styles to all the child <ul> tags in <nav> */
+  list-style-type: none; /* remove the dots from the list */
+  padding: 0;
+  margin: 0;
+}
+
+nav > ul > li {
+  /* Only applies these styles to the immediate child <li> in the immediate child <ul> in <nav>. Basically it only affects the <li> in the main menu not the sub menu */
+  display: inline-block; /* to make the links in the main menu site side by side */
+  position: relative; /* to make the parent <li> as the container element of the absolutely positioned <ul> representing the sub menu */
+}
+
+main h1 {
+  align-content: center;
+  margin: 20px;
+  color: #9c659c;
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+  margin: 20px;
+}
+
+.hero img {
+  max-width: 70%;
+  border: 1px solid royalblue;
+  border-radius: 4px; /* Rounded border */
+}
+
+.herotext {
+  font-family: Georgia, serif;
+  font-size: 1em;
+  text-align: left;
+  margin: 20px;
+}
+
+.errors {
+  font-size: 22px;
+  color: red;
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+}
+
+.admin_button button {
+  margin: 10px;
+  background-color: #edde45;
+  color: black;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 5px;
+  border: 1px solid cornflowerblue;
+}
+
+form,
+.formData {
+  padding: 30px;
+  text-align: center;
+}
+
+form label {
+  width: 150px;
+  display: inline-block;
+  font-size: 20px;
+}
+
+input:not([type="radio"]),
+textarea {
+  width: 500px;
+  font-size: 16px;
+  padding: 5px 10px;
+}
+input:not([type="radio"]) {
+  width: 500px;
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+input[type="submit"] {
+  width: 100px;
+  font-size: 20px;
+  background-color: #4374ae;
+  color: white;
+  border: 0px;
+  padding: 10px;
+  height: 40px;
+  border-radius: 8px;
+}
+
+footer {
+  text-align: center;
+  font-weight: bold;
+  background-color: #4374ae;
+  padding: 20px 0;
+  font-size: 20px;
+  color: white;
+}
+
+table {
+  border: 2px solid #011b4c;
+  border-collapse: collapse;
+  margin: 10px auto;
+  color: #011b4c;
+}
+
+td,
+th {
+  border: 2px solid #011b4c;
+  padding: 10px 6px;
+}
+
+th {
+  font-weight: bold;
+}

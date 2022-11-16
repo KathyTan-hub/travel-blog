@@ -1,0 +1,12 @@
+<nav>
+    <ul>
+        <%
+            for(var blog of blogs){
+        %>
+            <li><a href="/details/<%= blog._id %>"><%= blog.blogTitle %></a></li>    
+        <%
+            }
+         %>
+        <li><a href="/allposts">AllPosts</a></li> 
+    </ul>
+</nav>

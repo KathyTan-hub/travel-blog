@@ -1,0 +1,34 @@
+<%- include('layouts/head'); -%>
+<body>
+    <%- include('layouts/header'); -%>
+    <%- include('layouts/nav'); -%>
+    <main>
+        <div class="hero">
+            <form name="myform" method="POST" action="">
+                <label for="blogTitle">Title: </label>
+                <input type="text" id="blogTitle" placeholder="Blog Title" name="blogTitle"><br/>
+
+                <label for="image">Image: </label>
+                <input type="text" id="image" placeholder="Image Name" name="image"><br/>
+
+                <label for="description">Description: </label>
+                <textarea name="description" id="description" placeholder="Description" rows="10"></textarea>
+                <br/><br/>
+                <input type="submit" value="Submit">
+                <p id="errors">
+                    <% 
+                    if(typeof(errors) != 'undefined')
+                    {
+                        for (let error of errors)
+                        {
+                    %>
+                        <p class="errors"><%= error.msg %></p>
+                    <%
+                        }
+                    }
+                    %>
+                </p>
+            </form>
+        </div>
+    </main>
+<%- include('layouts/footer'); -%>
